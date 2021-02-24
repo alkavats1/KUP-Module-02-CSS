@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>FCC: Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!--body starts-->
+    <body> 
+      <!--Header-->
+        <header>
+          <h1 id="title">Survey Form</h1>
+        </header>  
+        <p id="description" >Let us know about your technology interest!!</p>
+        
+         <!--form starts-->
+        <form id="survey-form" action= "https:/knoldus/survey" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" placeholder="enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" placeholder="enter your email id" pattern="+@gmail.com" size="30" required>
+            <label for="age">Age</label>
+            <input type="number" id="number" name="Age" placeholder="enter your age" pattern="[0-9]+" min="10" max="99">
+
+            <!--Dropdown-->
+            <label for="dropdown">Which technology you like the most?</label>
+            <select id="dropdown" name="Which option best describes your current role?">
+            <option value="option" disabled selected>Select an option</option>
+            <option value="studet">UI</option>
+            <option value="full">Java</option>
+            <option value="part">Rust</option>
+            <option value="other">Scala</option><br><br>
+            </select>
+
+            <!--Radio Button-->
+            <label for="Gender">Gender</label>
+            <p>
+              <input type="radio" id="male"   name="gender" value="Male"> Male <br>
+              <input type="radio" id="female" name="gender" value="Female" checked> Female <br>
+              <input type="radio" id="other"  name="gender" value="Other"> Other <br>
+            </p>
+
+            <!--  Checkboxes  -->
+            <label for="Future plans">Technology in which you want to improve in the future?</label><br><b>
+            <fieldset id="future-plans">
+              <legend><em>(Check all that apply): </em></legend>   
+              <input type="checkbox" name="plan1"  value="front-end Projects">Front-end Projects<br>
+              <input type="checkbox" name="plan2"  value="back-end Projects">Back-end Projects<br>
+              <input type="checkbox" name="plan3"  value="data Visualization">Data Visualization<br>
+              <input type="checkbox" name="plan4"  value="rust">Rust<br>
+              <input type="checkbox" name="plan5"  value="devops">DevOps
+              <input type="checkbox" name="plan6"  value="quality assurance">Quality Assurance<br>
+              <input type="checkbox" name="plan7"  value="lightbend">LightBend <br>
+              <input type="checkbox" name="plan8"  value="AI/ML">AI/ML<br>
+              <input type="checkbox" name="plan9"  value="addcours">Additional Courses<br>
+            </fieldset><br>
+            
+            <!--Text Area-->  
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="Any comments or suggestions?" placeholder="Write something.." rows="4" cols="50"></textarea>
+
+            <!--Submit form-->
+            <input type="submit" value="Submit">
+
+        <!--form ends-->
+        </form>
+    <!--body ends-->   
+    </body>
+<!--html ends-->  
+</html>

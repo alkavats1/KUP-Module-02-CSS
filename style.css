@@ -1,0 +1,88 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: repeat;
+    background-image: url("image_background.jpg");
+}
+/* for title id*/
+#title{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+/* for description id*/
+#description{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+/* for survey-form id*/
+#survey-form{
+    border-radius: 5px;
+    background-color:rgb(51, 51, 104);
+    padding: 45px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 26%;
+    width: 40%;
+    height: 60%;
+ }
+
+/* for input type=text*/     
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* for input type=number*/     
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* for input type=email*/     
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* for input type=submit*/     
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  }
+
+  /* for responsivness*/     
+  @media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
